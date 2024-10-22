@@ -6,8 +6,9 @@ import re
 # Findind the date and time in the access log.
 # regex = "\[.*\]"    
 # Finding Web addresses in the access log.
-regex = "http[s]?://\\S+\\b"
-
+# regex = "http[s]?://\\S+\\b"
+# Finding the IP addresses in the access log.
+regex = "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
 
 filename = "smallerAccess.log"
 
