@@ -12,4 +12,4 @@ sql = "insert into book values (:title, :author, :ISBN)"
 cur.executemany(sql, data)
 con.commit()
 for row in cur.execute("select * from book"):
-    print (f"row{row}")
+    print (f"Row {row}")
